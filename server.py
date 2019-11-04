@@ -6,19 +6,19 @@ app = Flask(__name__)
 # home route
 @app.route('/', methods=['GET'])
 def home():
-    return render_template('index.html')  
+    return render_template('index.html')
 
 
-# data science route
-@app.route('/ds' , methods=['GET'])
-def ds():
-    return render_template('ds.html')
+# # data science route
+# @app.route('/ds' , methods=['GET'])
+# def ds():
+#     return render_template('ds.html')
 
 
-# writing route
-@app.route('/writing', methods=['GET'])
-def media():
-    return render_template('writing.html')
+# # writing route
+# @app.route('/writing', methods=['GET'])
+# def media():
+#     return render_template('writing.html')
 
 
 if __name__ == '__main__':
